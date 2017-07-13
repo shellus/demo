@@ -11,4 +11,7 @@ func main(){
 
 	// 调用应用入口
 	app.Main()
+
+	// 注意，这后面就不能用Session了
+	db.CloseSession()
 }

@@ -6,5 +6,6 @@ import (
 )
 
 func MainC(){
-	fmt.Printf("我是c.go的函数,我拿到了DB: %d\n", db.DB)
+	fmt.Println("我是c.go的函数,我拿到了DB, 正在ping")
+	fmt.Println(db.Session.Ping())
 }
